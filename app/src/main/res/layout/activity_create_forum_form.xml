@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateForumForm"
+    android:orientation="vertical">
+    <ImageButton
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:id="@+id/imgBtn_id"
+        android:background="@drawable/round_btn"
+        android:src="@drawable/ic_profile"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Forum name"
+        android:layout_margin="10dp"
+        android:id="@+id/forumName_id"/>
+
+    <EditText
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+    android:lines="3"
+    android:minLines="1"
+    android:gravity="top|left"
+    android:maxLines="5"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+        android:id="@+id/forumDescription_id"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:id="@+id/forumSubmitBtn_id"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar_id"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"/>
+
+</LinearLayout>
